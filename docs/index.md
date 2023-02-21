@@ -34,7 +34,7 @@ The `get_llm()` function can return either an [LLM](https://langchain.readthedoc
 ### Add the Kookaburra Github app to your project
 If you haven't signed up for Kookaburra, follow the instructions [here](#signing-up-for-kookaburra).
 
-If you are off the waitlist, you can add the Kookaburra Github app to your project. Go to `your-github-repo > Settings > GitHub Apps`. You should see the `kookaburra-codes` app installed here.
+If you are off the waitlist, you can add the [Kookaburra Github app](https://github.com/apps/kookaburra-codes) to your project. Go to `your-github-repo > Settings > GitHub Apps`. You should see the `kookaburra-codes` app installed here.
 
 If you do not see the app installed, you will need to give the GitHub App access to your repository. You can do this by going to your account's GitHub settings: `settings > Applications > kookaburra-codes > Configure`. On this page, you need to give the application access to your Kookaburra repository.
 
