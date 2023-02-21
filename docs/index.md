@@ -16,8 +16,10 @@ Create a Github repository for your Kookaburra project. The easiest way to do th
 Your repository should have the following layout:
 
     your-github-repo/
-        kookaburra.py      # The main file containing your Langchain chain
-        requirements.txt   # (optional) pip requirements
+        kookaburra.py      # The main file containing your Langchain llm
+        requirements.txt   # Coming soon! Kookaburra does not support custom 
+                           # package installs yet! Support for requirements 
+                           # and pyproject files are coming soon.
 
 The only required file is `kookaburra.py`, which is where your Langchain project will run from. All you need to implement is the `get_llm()` function, as shown below
 
