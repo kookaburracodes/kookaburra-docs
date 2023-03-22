@@ -17,9 +17,6 @@ Your repository should have the following layout:
 
     your-github-repo/
         kookaburra.py      # The main file containing your Langchain llm
-        requirements.txt   # Coming soon! Kookaburra does not support custom 
-                           # package installs yet! Support for requirements 
-                           # and pyproject files are coming soon.
 
 The only required file is `kookaburra.py`, which is where your Langchain project will run from. All you need to implement is the `get_llm()` function, as shown below
 
@@ -61,6 +58,25 @@ If you are not yet off the waitlist, please be patient! We just launched, and we
 
 Give us a follow an [Twitter](https://twitter.com/Kookaburracodes) and tweet at us to be moved to the top of the waitlist.
 
+
+## Installing custom packages
+
+You can install custom packages by creating a `requirements.txt` file or a `pyproject.toml` file in the top-most level of your project. Kookaburra will automatically install the packages specified in one of these files if they are present in your repository. If you include both, only `requirements.txt` will be used.
+
+For example:
+
+    your-github-repo/
+        kookaburra.py      # The main file containing your Langchain llm
+        requirements.txt   # A file containing the packages to install
+
+If you need to specify additional packages like `git` or `cmake` in order to build certain python packages, include those in a file named `apt_install.txt`. Kookaburra will automatically install the packages specified in this file if it is present in your repository. This happens before any additional python packages are installed.
+
+For example:
+
+    your-github-repo/
+        kookaburra.py      # The main file containing your Langchain llm
+        requirements.txt   # A file containing the packages to install
+        apt_install.txt    # A file containing the packages to install with apt
 
 ## FAQs
 We just went live, so this section is still a WiP!
